@@ -71,7 +71,17 @@ console.log(sum / karakterer.length);
 // Hver gang et tal er deleligt med 5 skrives "Hurra"
 // Hvis tallet både er deleligt med 3 og 5 skrives "Hip Hurra"
 
-
+for (var i = 0; i <= 100; i++) {
+    if (i % 15 == 0) {
+        console.log(i + ": Hip Hurra");
+    } else if (i % 3 == 0) {
+        console.log(i + ": Hip");
+    } else if (i % 5 == 0) {
+        console.log(i + ": Hurra");
+    } else {
+        console.log(i);
+    }
+}
 
 
 // Opgave 8
@@ -84,10 +94,29 @@ console.log(sum / karakterer.length);
 !!!!!
 */
 
+for (var i = 0; i < 5; i++) {
+    let str = "!";
+    for (var j = 0; j < i; j++) {
+        str += "!";
+    }
+    console.log(str);
+}
 
 
 // Opgave 9
 // Skriv et program med en løkke, der for to givne tal, finder den største fælles divisor (Det største tal, der går op i begge tal).
 
+let a = 45;
+let b = 15;
 
+while (a != b) {
+
+    if (a > b) {
+        a -= b;
+    } else {
+        b -= a;
+    }
+}
+
+console.log(a);
 
