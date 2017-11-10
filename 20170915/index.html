@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="da">
+    <head>
+        <title>Test på grafisk brugergrænseflade</title>
+        <meta charset="utf-8" />
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+            <div>Test med tekst</div>
+            <div id="teksttest"></div>
+        </div>
+
+
+        <div>
+            <div>Test med knap</div>
+            <div>
+                <button type="button" onclick="skrivNoget()">Tryk på mig</button>
+            </div>
+            <div id="knaptest"></div>
+        </div>
+
+
+        <div>
+            <div>Test med input</div>
+            <div>
+                <input id="inputtekst" type="text"/>
+            </div>
+            <div>
+                <button type="button" onclick="kontrollerInput()">Jeg gør noget</button>
+            </div>
+            <div id="inputtest"></div>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
